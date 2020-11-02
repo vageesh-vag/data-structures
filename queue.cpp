@@ -56,6 +56,10 @@ class queue
 		}
 		cout<<"largest is "<<largest;
 	}
+	void delete()
+	{
+		front=front.next;
+	}
 };
 main()
 {
@@ -63,7 +67,7 @@ main()
 	queue q1;
 	while(1)
 	{
-		cout<<"1.insertion\n2.display\n3.largest\n";
+		cout<<"1.insertion\n2.deletion\n3.display\n4.largest\n";
 		cout<<"enter choice\n";
 		cin>>choice;
 		switch(choice)
@@ -72,9 +76,12 @@ main()
 				q1.insert();
 				break;
 			case 2:
-				q1.display();
+				q1.delete();
 				break;
 			case 3:
+				q1.display();
+				break;
+			case 4:
 				q1.largest();
 				break;
 		}
