@@ -3,7 +3,7 @@ class node:
         self.data=0
         self.next=None
         self.prev=None
-class sll:
+class dll:
     def __init__(self):
         self.root=None
     def insertf(self):
